@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alvin anak Julies Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav_links">
+          <li class="nav_items">
+            <a class="nav_link" href="#section--1">About Me</a>
+          </li>
+          <li class="nav_items">
+            <a class="nav_link" href="#section--2">Skills</a>
+          </li>
+          <li class="nav_items">
+            <a class="nav_link" href="#section--3">Personal Projects</a>
+          </li>
+          <li class="nav_items">
+            <a class="nav_link" href="#section--4">Contact Me</a>
+          </li>
+        </ul>
+        <div class="links">
+          <a
+            class="nav_link"
+            href="https://www.linkedin.com/in/alvin-julies-b6767014b/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </nav>
+      <div class="header_title">
+        <div class="row0">
+          <span class="topline">Hello, I'm</span>
+          <h1 class="name">Alvin anak Julies</h1>
+          <h3 class="desc">I'm a <span class="multiText"></span></h3>
+          <div class="row1">
+            <button class="btn-text btn-scroll-to">
+              Learn More &DownArrow;
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section" id="section--1">
+      <div class="section_title">
+        <h2 class="section_description">About Me</h2>
+        <h3 class="section_header">Alvin anak Julies</h3>
+        <p>Full-Stack Developer & Software Engineer</p>
+      </div>
+      <div class="about_me">
+        <!--insert self image here-->
+      </div>
+      <div class="about_me description">
+        <p>
+          I am a fresh graduate from University Malaysia Pahang (UMP) with a
+          Bachelor's Degree in Software Engineering. I am a goal driven
+          individual and a fast learner. I am always willing to leearn new
+          things to expand my knowledge as I proceed with my career as a
+          Software Engineer. My career objective is to be a Full-Stack
+          Developer. To achieve that goal, I need a strong foundation on
+          front-end and back-end development which I am planning on improving
+          hand in hand with my career moving forward.
+        </p>
+      </div>
+    </section>
+    <section class="section" id="section--2">
+      <div class="section_title">
+        <h2 class="section_description">Skills</h2>
+      </div>
+      <div class="skills">
+        <div class="skills_tab-container">
+          <button
+            class="btn skills_tab skills_tab--1 skills_tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Technical Skills
+          </button>
+          <button class="btn skills_tab skills_tab--2" data-tab="2">
+            <span>02</span>Language
+          </button>
+          <button class="btn skills_tab skills_tab--3" data-tab="3">
+            <span>03</span>Interests
+          </button>
+        </div>
+
+        <div class="skills_content skills_content--1 skills_content--active">
+          <h5 class="skills_header">Here are the technical skills</h5>
+          <ul>
+            <li>CSS</li>
+            <li>HTML5</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skills_content skills_content--2">
+          <h5 class="skills_header">Here are the Language skills</h5>
+          <p>Fluent in written and conversational English</p>
+          <p>Fluent in written and conversational Bahasa Malaysia</p>
+        </div>
+
+        <div class="skills_content skills_content--3">
+          <h5 class="skills_header">Here are my personal Interests</h5>
+          <p>Chess, Badminton and Traditional Dances</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section_title">
+        <h2 class="section_description">Personal Projects</h2>
+        <h3 class="section_header">My Works</h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="project">
+            <h5 class="project_header">Project: Bankist</h5>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="project">
+            <h5 class="project_header">Project: Guess My Number</h5>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="project">
+            <h5 class="project_header">Project: Dice Game</h5>
+          </div>
+        </div>
+
+        <button class="slider_btn slider_btn--left">&larr;</button>
+        <button class="slider_btn slider_btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section" id="section--4">
+      <div class="section_title">
+        <h2 class="section_description">Contact Me</h2>
+        <h3 class="section_header">Contact Information</h3>
+        <p>Email: alvinjulies@gmail.com</p>
+        <p>Phone: 019-765 7996</p>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typingEffect = new Typed('.multiText', {
+        strings: ['Full-Stack Developer', 'Software Engineer'],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1500,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
